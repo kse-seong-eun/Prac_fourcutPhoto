@@ -1,0 +1,100 @@
+@font-face {
+    font-family: "LeeSeoyun";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/LeeSeoyun.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "LeeSeoyun";
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url("./background.png");
+}
+
+.container {
+    width: 390px;
+    background-color: rgb(39, 39, 39);
+    height: 100%;
+}
+
+.photos {
+    margin-top: 30px;
+
+}
+
+.photo-frame {
+    background-color: white;
+    /*       상하   좌우 마진     */
+    margin: 15px 20px;
+    height: 250px;
+    background-size: cover;
+    position: relative;
+    /* ⭐️ .photo-description의 위치를 잡는 기준!*/
+    cursor: pointer;
+}
+
+#image1 {
+    background-image: url("./pic01.jpg");
+}
+#image2 {
+    background-image: url("./pic02.jpg");
+}
+#image3 {
+    background-image: url("./pic03.jpg");
+}
+.video {
+    width: 100%;
+    height: 100%;
+}
+
+.photo_description {
+    color: white;
+    background-color: black;
+
+    width: fit-content;
+    padding: 4px 15px;
+    border-radius: 0px;
+    margin-bottom: 10px;
+
+    position: absolute;
+    bottom: 0px;
+    /* ⭐️ 기준으로부터 아래 영역은 0px!*/
+    transform: translate(-50%);
+    left: 50%;
+    /* ⭐️ span의 가운데 정렬 trnasform과 left는 set메뉴!*/
+    text-align: center;
+    /* ⭐️ text의 가운데 정렬!*/
+
+    opacity: 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f-title {
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+
+.f-data {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.showText {
+    opacity: 0;
+
+}
+
+.hideText {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}

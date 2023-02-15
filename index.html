@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styling.css">
+    <link rel="stylesheet" href="action.js">
+    <script type=text/javascript src="action.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div id="image1" class="photo-frame" onmouseover="hideText(1)" onmouseout="showText(1)" onclick="alertText(1)">
+                <span id="desc1" class="photo_description">
+                    인생 네 컷 포토 느낌의 웹페이지 만들기! 배우스
+                </span>
+            </div>
+            <div id="image2" class="photo-frame" onmouseover="hideText(2)" onmouseout="showText(2)" onclick="alertText(2)">
+                <span id="desc2" class="photo_description">
+                    인생 네 컷 포토 느낌의 웹페이지 만들기! 아이돌스
+                </span> 
+            </div>        
+            <div id="image3" class="photo-frame" onmouseover="hideText(3)" onmouseout="showText(3)" onclick="alertText(3)">
+                <span id="desc3" class="photo_description">
+                    인생 네 컷 포토 느낌의 웹페이지 만들기! 배우스2
+                </span>
+            </div>
+            <div  class="photo-frame">
+                <iframe src="https://www.youtube.com/embed/d2cytHBZJSs" 
+                class="video"
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+            </div>     
+        </div>         
+        <div class="footer">
+            <p class="f-title">Happy Launch Time</p>
+            <p class="f-data">2023.2.14</p>
+        </div>        
+    </div>
+</body>
+</html>
